@@ -109,7 +109,7 @@ export const getBoardStateTool = createTool({
     isGameOver: z.boolean().describe('Whether the game is over'),
     moveHistory: z.array(z.string()).describe('List of all moves played in the game'),
     lastMove: z.string().nullable().describe('The last move played'),
-    boardVisual: z.string().describe('Visual ASCII representation of the board with piece symbols'),
+    // boardVisual: z.string().describe('Visual ASCII representation of the board with piece symbols'),
   }),
   execute: async () => {
     const engine = getChessEngine();
@@ -124,7 +124,7 @@ export const getBoardStateTool = createTool({
       isGameOver: state.isGameOver,
       moveHistory: state.moveHistory,
       lastMove: state.lastMove,
-      boardVisual: createEnhancedBoardVisual(engine),
+      // boardVisual: createEnhancedBoardVisual(engine),
     };
   },
 });

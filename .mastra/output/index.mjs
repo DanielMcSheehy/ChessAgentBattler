@@ -67,7 +67,7 @@ const chessBlackAgent = new Agent({
 3. Call make-move with your choice
 No explanation needed.`,
   // model: 'anthropic/claude-haiku-4-5',
-  model: "anthropic/claude-sonnet-4-5-20250929",
+  model: "anthropic/claude-opus-4-5-20251101",
   tools: {
     visualizeBoardTool,
     getLegalMovesTool,

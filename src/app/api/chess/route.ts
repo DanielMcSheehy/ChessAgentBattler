@@ -164,6 +164,7 @@ async function runAdvisorAnalysis(
   startFen: string,
   signal: AbortSignal
 ): Promise<string | null> {
+  return null;
   // Check if already aborted
   if (signal.aborted) {
     return null;
